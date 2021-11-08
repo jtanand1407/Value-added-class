@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    iframe{
+        display:block;
+        margin-left:auto;
+        margin-right: auto;
+    }
+    table
+    {
+        font-family: Arial, Helvetica, sans-serif;
+        
+        width: 80% ;
+    
+    }
+    tb,th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+        border-radius: 10px;
+    }
+    tr:nth-child(even){
+       background-color: darksalmon;
+    }
+
+    body{
+        background-image: url('https://images.pexels.com/photos/1591447/pexels-photo-1591447.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+   table.center
+   {
+       margin-left: auto;
+       margin-right: auto;
+   }
+    </style>
+    <h1 style="text-align: center;color: darkblue;font-style: italic;">Website</h1>
+</head>
+<body>
+    
+    <p style="text-align: center;color: darkmagenta;">I will show you the mapped image now.</p>
+    <br>
+    <br>
+    <br>
+    <img style="width:20%;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxfOWPUNoQJtI01rgdB_Wvm6mpsAJ81Z43Rw&usqp=CAU" alt="Image is shown" usemap="#mapu" >
+    <map name="mapu">
+        <area shape="poly" coords="128px,9px,102px,156px,187px,38px,42px,108px,85px,60px,145px,97px" href="https://www.amazon.in/Smartphones/b?ie=UTF8&node=1805560031" alt="destination">
+        <area shape="circle" coords="199px,133px,10px" href="https://www.boat-lifestyle.com/collections/bluetooth-wireless-headphones" alt="earphones">
+    </map>
+    <br>
+    <br>
+    <br>
+    <br>
+    <table class="center">
+        <tr>
+            <th>Name</th>
+            <th>Place</th>
+            <th>Animal</th>
+        </tr>
+        <tr>
+            <td>jatin</td>
+            <td>lko</td>
+            <td>lion
+            </td>
+        </tr>
+        <tr>
+            <td>naman</td>
+            <td>mumbai</td>
+            <td>cheetah</td>
+        </tr>
+        <tr>
+            <td>mannu</td>
+            <td>shimla</td>
+            <td>monkey</td>
+        </tr>
+    </table>
+    <iframe src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" name="this_one" height="cover" width="cover" title="iframe exaple"></iframe>
+    <p><a href="https://www.kiet.edu" target="this_one">See youtube in above photo</a></p>
+    <br>
+    <br>
+    <h1 style="color: brown;">My First JavaScript</h1>
+<p style="color: chocolate;font-size: 200%;">Here, a JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<script>
+function light(sw) {
+  var pic;
+  if (sw == 0) {
+    pic = "https://image.emojisky.com/101/1707101-middle.png" 
+  } else {
+    pic = "https://w7.pngwing.com/pngs/848/575/png-transparent-incandescent-light-bulb-lighting-invention-yellow-light-bulb-glass-led-lamp-black.png"
+  }
+  document.getElementById('myImage').src = pic;
+}
+</script>
+
+<img id="myImage" src="https://image.emojisky.com/101/1707101-middle.png" width="200" height="180" alt="unable to process the image">
+
+<p>
+<button type="button" onclick="light(1)">Light On</button>
+<button type="button" onclick="light(0)">Light Off</button>
+</p>
+    <br>
+    <br>
+    <br>
+
+
+</body>
+</html>
